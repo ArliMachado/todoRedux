@@ -1,11 +1,13 @@
 import React from 'react';
+import { Provider, connect } from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
-  );
-}
+import store from './store/index';
+import TodoList from './TodoList';
+
+const App = () => (
+  <Provider store={store}>
+    <TodoList />
+  </Provider>
+);
 
 export default App;
