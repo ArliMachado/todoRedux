@@ -1,5 +1,5 @@
 import React from 'react';
-import { Provider, connect } from 'react-redux';
+import { Provider } from 'react-redux';
 
 import store from './store/index';
 import TodoList from './TodoList';
